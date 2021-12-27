@@ -24,6 +24,8 @@
     
     p {
         color: var(--Black);
+        font-size: 1.5rem;
+        text-align: center;
     }
 
     /* GENERALES */
@@ -33,7 +35,7 @@
         --background: #0D7471;
         --Yellow: #FFF092;
         --white: #FFFFFF;
-        --Black: #000000;
+        --Black: #2e2e2e;
         --blue: #3340FF;
         --grey: #878787;
         --greytext: #565656;
@@ -42,6 +44,15 @@
     /* VARIABLES */
     body {
         background-color: var(--Yellow);
+        animation-name: body;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes body {
+        0%{background-color: var(--Yellow);}
+        50%{background-color: rgb(250, 250, 250);}
+        100%{background-color: var(--Yellow);}
     }
 
     .main-frappeslokos-responsive {
@@ -61,6 +72,11 @@
         width: 100%;
         position: fixed;
         background-color: var(--Black);
+    }
+
+    .header-responsive:hover {
+        background-color: var(--background);
+        transition: 1s;
     }
 
     .navigation-responsive {
@@ -85,6 +101,10 @@
     .items-responsive {
         padding: 0 2rem;
         margin: auto;
+    }
+
+    .items-responsive:hover {
+        border-bottom: 2px solid rgb(255, 255, 255);
     }
 
     /* HEADER */
@@ -320,4 +340,191 @@
         background-color: var(--bluegreen);
         border-radius: 10px;
     }
-}
+
+    .container-60 {
+        width: 40%;
+        background-color: var(--background);
+        border-radius: 10px;
+        margin: 2rem auto;
+        padding: 1rem 0;
+    }
+
+    .title-60 {
+        margin: auto;
+    }
+
+    .title-60 h1 {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .products-60-box-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+
+    .produc-grid {
+        margin: auto;
+        background-color: var(--white);
+        border-radius: 50px;
+        padding: 0.5rem 0;
+        width: 90%;
+        background-color: var(--Yellow);
+    }
+
+    .produc-grid p {
+        font-size: 1.5rem;
+    }
+
+    .fuera {
+        margin: 1rem auto;
+        background-color: var(--Yellow);
+        border-radius: 50px;
+        width: 95%;
+        padding: .5rem 0;
+    }
+
+    .fuera p {
+        font-size: 1.5rem;
+    }
+
+    .img-product-box-60 {
+        width: 40%;
+        margin: 1rem auto;
+    }
+
+    .container-product-60 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--background);
+        margin: 2rem auto;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .img-box-product-60 {
+        margin: auto;
+    }
+
+    .img-box-product-60 img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .description-product-60 {
+        margin: auto;
+        background-color: var(--bluegreen);
+        border-radius: 10px;
+    }
+
+    .description-product-60 p {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+
+    .productos-lista{
+        margin: .5rem auto;
+        background-color: var(--Yellow);
+        border-radius: 50px;
+        padding: 0.5rem 0;
+        width: 90%;
+    }
+
+    .productos-fuera {
+        margin: 1rem auto;
+        background-color: var(--Yellow);
+        border-radius: 50px;
+        width: 95%;
+        padding: .5rem 0;
+    }
+
+    .contenedor {
+        width: 40%;
+        background-color: var(--background);
+        border-radius: 10px;
+        margin: 2rem auto;
+        padding: 1rem 0;
+    }
+
+    .title-65 {
+        margin: auto;
+        width: 90%;
+    }
+
+    .title-65 h1 {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .grid-box {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+    }
+    
+    .producto-expo-main {
+        width: 40%;
+        margin: 1rem auto;
+    }
+
+    .grid-box-expo {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: var(--background);
+        margin: 2rem auto;
+        border-radius: 10px;
+        padding: 1rem;
+    }
+
+    .img-expo {
+        margin: auto;
+    }
+
+    .img-expo img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    .expo-description {
+        margin: auto;
+        background-color: var(--bluegreen);
+        border-radius: 10px;
+    }
+
+    .expo-description p {
+        font-size: 1.5rem;
+        color: var(--white);
+    }
+
+    .contactame {
+        width: 40%;
+        margin: 2rem auto;
+        background-color: var(--white);
+        border-radius: 10px;
+    }
+    .contactame img {
+        border-radius: 50%;
+        margin: auto;
+        display: block;
+        width: 50%;
+    }
+
+    .datos-contact {
+        width: 100%;
+        margin: auto;
+    }
+
+    .datos-contact p {
+        font-size: 3rem;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 4rem auto;
+    }
+
+}   

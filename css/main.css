@@ -4,6 +4,16 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
+    animation-name: hola;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes hola {
+    0%{background-color: var(--background);}
+    50%{background-color: var(--greytext);}
+    100%{background-color: var(--background);}
+    
 }
 /* END RESET */
 
@@ -15,14 +25,14 @@ body {
 
 /* VARIABLES */
 :root {
-    --background: #004D4B;
-    --Yellow: #FFDC00;
+    --background: #0D7471;
+    --Yellow: #FFF092;
     --white: #FFFFFF;
     --Black: #000000;
     --blue: #3340FF;
     --grey: #878787;
     --greytext: #565656;
-    --bluegreen: #40A09D;
+    --bluegreen: #0E918D;
 }
 /* VARIABLES */
 
